@@ -1,0 +1,36 @@
+{
+  "icon": "fa-openshift",
+  "title": "OpenDataHub: Working with data intro",
+  "description": "An introduction to using the Open Data Hub to interact with data stored in Ceph S3 via Jupyter",
+  "pathwayTitle": "OpenShift",
+  "difficulty": "Beginner",
+  "time": "20-30 minutes",
+  "backend": {
+    "imageid": "openshift-4-2"
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [{"name": "Dashboard", "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com"}],
+    "uilayout": "editor-terminal",
+    "uisettings": "yaml",
+    "uieditorpath": "/root/opendatahub-operator",
+    "hideintro": false,
+    "hidefinish": false
+  },
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "courseData": "env-init.sh",
+      "code": "set-env.sh",
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+}
